@@ -1,0 +1,795 @@
+2017-11-14 16:13:38,483 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-14 16:13:38,488 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-14 16:13:38,589 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-14 16:13:38,654 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:69) - {[*]/Initial] [*]/SanityCheck]} - 
+2017-11-14 16:13:38,655 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:70) - {[*]/Initial] [*]/SanityCheck]} - *********************************
+2017-11-14 16:13:38,655 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:71) - {[*]/Initial] [*]/SanityCheck]} - Sample configuration files were created in
+2017-11-14 16:13:38,655 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:72) - {[*]/Initial] [*]/SanityCheck]} -    /Users/kathrynjonas/Desktop/changelog-2.0.0-3/config
+2017-11-14 16:13:38,655 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:73) - {[*]/Initial] [*]/SanityCheck]} - Please see the documentation for more information on how to configure this service
+2017-11-14 16:13:38,655 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:74) - {[*]/Initial] [*]/SanityCheck]} - *********************************
+2017-11-14 16:13:38,655 [main] ERROR 'com.escenic.changelog.SanityCheck' - com.escenic.changelog.SanityCheck.startService(SanityCheck.java:75) - {[*]/Initial] [*]/SanityCheck]} - 
+2017-11-14 16:19:23,725 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-14 16:19:23,728 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-14 16:19:23,755 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-14 16:19:23,798 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-14 16:19:24,185 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-14 16:19:24,190 [main] ERROR 'neo.nursery.BusImpl' - neo.nursery.BusImpl$AbstractProperty.setValue(BusImpl.java:1217) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - Transforming property 'url' with value '' failed
+java.lang.IllegalArgumentException: '' is not a valid URL
+	at neo.nursery.transformers.URLPropertyTransformer.transform(URLPropertyTransformer.java:27)
+	at neo.nursery.transformers.AbstractPropertyTransformer.transformWithFallbackToStaticFieldIfTransformationFails(AbstractPropertyTransformer.java:81)
+	at neo.nursery.transformers.AbstractPropertyTransformer.transform(AbstractPropertyTransformer.java:75)
+	at neo.nursery.BusImpl$AbstractProperty.transformValue(BusImpl.java:1205)
+	at neo.nursery.BusImpl$AbstractProperty.setValue(BusImpl.java:1214)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:391)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:965)
+	at neo.nursery.BusFactory.createBus(BusFactory.java:49)
+	at neo.nursery.ClassLoadingBus.startService(ClassLoadingBus.java:123)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:173)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:116)
+	at neo.nursery.GlobalBus.main(GlobalBus.java:227)
+Caused by: java.net.MalformedURLException: no protocol: 
+	at java.net.URL.<init>(URL.java:586)
+	at java.net.URL.<init>(URL.java:483)
+	at java.net.URL.<init>(URL.java:432)
+	at neo.nursery.transformers.URLPropertyTransformer.transform(URLPropertyTransformer.java:24)
+	... 48 more
+2017-11-14 16:19:24,199 [main] ERROR 'com.escenic.changelog.Daemon' - neo.nursery.GenericService.logErrorDoNextStepAndThrow(GenericService.java:328) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - The configuration of the 'com.escenic.changelog.Daemon' service is invalid
+java.lang.IllegalArgumentException: The username to use when accessing the Web Service is not set
+	at org.apache.commons.lang.Validate.notEmpty(Validate.java:321)
+	at com.escenic.changelog.Daemon.startService(Daemon.java:233)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:965)
+	at neo.nursery.BusFactory.createBus(BusFactory.java:49)
+	at neo.nursery.ClassLoadingBus.startService(ClassLoadingBus.java:123)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:173)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:116)
+	at neo.nursery.GlobalBus.main(GlobalBus.java:227)
+2017-11-14 16:19:24,200 [main] ERROR 'neo.nursery.BusImpl' - neo.nursery.BusImpl.callDoStartService(BusImpl.java:880) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - Invoking doStartService on class 'com.escenic.changelog.Daemon' threw exception. 
+java.lang.IllegalArgumentException: The configuration of the 'com.escenic.changelog.Daemon' service is invalid
+	at neo.nursery.GenericService.start(GenericService.java:268)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:965)
+	at neo.nursery.BusFactory.createBus(BusFactory.java:49)
+	at neo.nursery.ClassLoadingBus.startService(ClassLoadingBus.java:123)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:173)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:116)
+	at neo.nursery.GlobalBus.main(GlobalBus.java:227)
+Caused by: java.lang.IllegalArgumentException: The username to use when accessing the Web Service is not set
+	at org.apache.commons.lang.Validate.notEmpty(Validate.java:321)
+	at com.escenic.changelog.Daemon.startService(Daemon.java:233)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	... 48 more
+2017-11-14 16:19:24,202 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-14 16:19:24,202 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-14 16:19:24,202 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-14 16:19:24,203 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-14 16:19:24,205 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-14 16:19:24,205 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-14 16:19:24,205 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-14 16:19:56,406 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-14 16:19:56,409 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-14 16:19:56,436 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-14 16:19:56,479 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-14 16:19:56,582 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-14 16:19:56,585 [main] ERROR 'neo.nursery.BusImpl' - neo.nursery.BusImpl$AbstractProperty.setValue(BusImpl.java:1217) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - Transforming property 'url' with value '"http://ece-economist.economist.cue.cloud:8080/webservice/escenic/changelog/publication/6"' failed
+java.lang.IllegalArgumentException: '"http://ece-economist.economist.cue.cloud:8080/webservice/escenic/changelog/publication/6"' is not a valid URL
+	at neo.nursery.transformers.URLPropertyTransformer.transform(URLPropertyTransformer.java:27)
+	at neo.nursery.transformers.AbstractPropertyTransformer.transformWithFallbackToStaticFieldIfTransformationFails(AbstractPropertyTransformer.java:81)
+	at neo.nursery.transformers.AbstractPropertyTransformer.transform(AbstractPropertyTransformer.java:75)
+	at neo.nursery.BusImpl$AbstractProperty.transformValue(BusImpl.java:1205)
+	at neo.nursery.BusImpl$AbstractProperty.setValue(BusImpl.java:1214)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:391)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:965)
+	at neo.nursery.BusFactory.createBus(BusFactory.java:49)
+	at neo.nursery.ClassLoadingBus.startService(ClassLoadingBus.java:123)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:173)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:116)
+	at neo.nursery.GlobalBus.main(GlobalBus.java:227)
+Caused by: java.net.MalformedURLException: no protocol: "http://ece-economist.economist.cue.cloud:8080/webservice/escenic/changelog/publication/6"
+	at java.net.URL.<init>(URL.java:586)
+	at java.net.URL.<init>(URL.java:483)
+	at java.net.URL.<init>(URL.java:432)
+	at neo.nursery.transformers.URLPropertyTransformer.transform(URLPropertyTransformer.java:24)
+	... 48 more
+2017-11-14 16:19:56,590 [main] ERROR 'com.escenic.changelog.Daemon' - neo.nursery.GenericService.logErrorDoNextStepAndThrow(GenericService.java:328) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - The configuration of the 'com.escenic.changelog.Daemon' service is invalid
+java.lang.IllegalArgumentException: The change log uri is not set
+	at org.apache.commons.lang.Validate.notNull(Validate.java:192)
+	at com.escenic.changelog.Daemon.startService(Daemon.java:235)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:965)
+	at neo.nursery.BusFactory.createBus(BusFactory.java:49)
+	at neo.nursery.ClassLoadingBus.startService(ClassLoadingBus.java:123)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:173)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:116)
+	at neo.nursery.GlobalBus.main(GlobalBus.java:227)
+2017-11-14 16:19:56,591 [main] ERROR 'neo.nursery.BusImpl' - neo.nursery.BusImpl.callDoStartService(BusImpl.java:880) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - Invoking doStartService on class 'com.escenic.changelog.Daemon' threw exception. 
+java.lang.IllegalArgumentException: The configuration of the 'com.escenic.changelog.Daemon' service is invalid
+	at neo.nursery.GenericService.start(GenericService.java:268)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:965)
+	at neo.nursery.BusFactory.createBus(BusFactory.java:49)
+	at neo.nursery.ClassLoadingBus.startService(ClassLoadingBus.java:123)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	at neo.nursery.AbstractNurseryService.doStartService(AbstractNurseryService.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at neo.nursery.BusImpl.callDoStartService(BusImpl.java:873)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:712)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.relativeLookup(BusImpl.java:199)
+	at neo.nursery.BusImpl.access$200(BusImpl.java:44)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transformSingleEntry(BusImpl.java:1155)
+	at neo.nursery.BusImpl$ComponentPropertyTransformer.transform(BusImpl.java:1145)
+	at neo.nursery.BusImpl.transform(BusImpl.java:531)
+	at neo.nursery.BusImpl.invokePutMethod(BusImpl.java:588)
+	at neo.nursery.BusImpl.setObjectProperty(BusImpl.java:379)
+	at neo.nursery.BusImpl.setObjectProperties(BusImpl.java:353)
+	at neo.nursery.BusImpl.createObject(BusImpl.java:711)
+	at neo.nursery.BusImpl.lookup(BusImpl.java:175)
+	at neo.nursery.BusImpl.lookupSafe(BusImpl.java:186)
+	at neo.nursery.BusImpl.initialize(BusImpl.java:958)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:173)
+	at neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:116)
+	at neo.nursery.GlobalBus.main(GlobalBus.java:227)
+Caused by: java.lang.IllegalArgumentException: The change log uri is not set
+	at org.apache.commons.lang.Validate.notNull(Validate.java:192)
+	at com.escenic.changelog.Daemon.startService(Daemon.java:235)
+	at neo.nursery.AbstractNurseryService$1.start(AbstractNurseryService.java:105)
+	at neo.nursery.GenericService.start(GenericService.java:254)
+	... 48 more
+2017-11-14 16:19:56,593 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-14 16:19:56,593 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-14 16:19:56,593 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-14 16:19:56,593 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-14 16:19:56,595 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-14 16:19:56,595 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-14 16:19:56,595 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-14 16:20:18,681 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-14 16:20:18,684 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-14 16:20:18,710 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-14 16:20:18,753 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-14 16:20:18,856 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-14 16:20:19,023 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-14 16:20:19,024 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-14 16:20:19,024 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-14 16:20:19,024 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-14 16:20:19,024 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-14 16:30:18,832 [com.escenic.changelog.Reporter-Reporter-0] INFO  'com.escenic.changelog.Reporter' - com.escenic.changelog.Reporter$1.run(Reporter.java:59) - {} - : 30Mb in use by applications (31474k delta) ; 368Mb total allocated by JVM; 6 threads; uptime 10:00
+Change log entries handled by 'com.escenic.changelog.Daemon': Since last sample: 11 change log entries handled; effective 0.02Hz; average 2ms; peak 12ms; load 0.00 (delta 0.00); 0 failed change log entries; Total: 11 change log entries handled; average 2ms.
+Change log requests handled by 'com.escenic.changelog.Daemon': Since last sample: 60 change log requests handled; effective 0.10Hz; average 122ms; peak 2175ms; load 0.01 (delta 0.01); 0 failed change log requests; Total: 60 change log requests handled; average 122ms.
+2017-11-14 16:40:18,805 [com.escenic.changelog.Reporter-Reporter-0] INFO  'com.escenic.changelog.Reporter' - com.escenic.changelog.Reporter$1.run(Reporter.java:59) - {} - : 38Mb in use by applications (7896k delta) ; 368Mb total allocated by JVM; 6 threads; uptime 20:00
+Change log entries handled by 'com.escenic.changelog.Daemon': Since last sample: 0 change log entries handled; effective 0.00Hz; average 0ms; peak 0ms; load 0.00 (delta -0.00); 0 failed change log entries; Total: 11 change log entries handled; average 2ms.
+Change log requests handled by 'com.escenic.changelog.Daemon': Since last sample: 60 change log requests handled; effective 0.10Hz; average 90ms; peak 310ms; load 0.01 (delta -0.00); 0 failed change log requests; Total: 120 change log requests handled; average 106ms.
+2017-11-14 16:47:32,482 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-14 16:47:32,482 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-14 16:47:32,483 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-14 16:47:32,483 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-14 16:47:32,484 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 14:19:25,099 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 14:19:25,116 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 14:19:25,282 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 14:19:25,400 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 14:19:25,943 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 14:19:26,283 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 14:19:26,283 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 14:19:26,284 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 14:19:26,284 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 14:19:26,284 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 14:20:39,546 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:20:39,546 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 14:20:39,547 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:20:39,547 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 14:20:39,547 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 14:31:09,171 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 14:31:09,174 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 14:31:09,201 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 14:31:09,245 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 14:31:09,347 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 14:31:09,497 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 14:31:09,498 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 14:31:09,498 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 14:31:09,498 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 14:31:09,498 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 14:32:24,837 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.PollChangeLogTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.PollChangeLogTask.processEntries(PollChangeLogTask.java:146)
+	at com.escenic.changelog.PollChangeLogTask.process(PollChangeLogTask.java:91)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 14 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 15 more
+2017-11-15 14:33:14,763 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 13 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+2017-11-15 14:33:59,417 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:33:59,417 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 14:33:59,418 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:33:59,418 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 14:33:59,419 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 14:34:01,838 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 14:34:01,841 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 14:34:01,867 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 14:34:01,911 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 14:34:02,017 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 14:34:02,184 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 14:34:02,185 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 14:34:02,185 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 14:34:02,185 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 14:34:02,185 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 14:34:07,480 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 13 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+2017-11-15 14:34:17,301 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.PollChangeLogTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.PollChangeLogTask.processEntries(PollChangeLogTask.java:146)
+	at com.escenic.changelog.PollChangeLogTask.process(PollChangeLogTask.java:91)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 14 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 15 more
+2017-11-15 14:35:07,492 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 13 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+2017-11-15 14:35:42,141 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:35:42,142 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 14:35:42,142 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:35:42,143 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 14:35:42,144 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 14:40:13,529 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 14:40:13,532 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 14:40:13,559 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 14:40:13,602 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 14:40:13,705 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 14:40:13,828 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 14:40:13,828 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 14:40:13,829 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 14:40:13,829 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 14:40:13,829 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 14:40:19,148 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 13 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+2017-11-15 14:40:28,951 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.PollChangeLogTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: There was an error in running the './executible.sh' command!
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:173)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.PollChangeLogTask.processEntries(PollChangeLogTask.java:146)
+	at com.escenic.changelog.PollChangeLogTask.process(PollChangeLogTask.java:91)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "./executible.sh" (in directory "."): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:143)
+	... 14 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 15 more
+2017-11-15 14:40:29,344 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:40:29,345 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 14:40:29,345 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 14:40:29,346 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 14:40:29,347 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 15:03:55,784 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 15:03:55,787 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 15:03:55,814 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 15:03:55,857 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 15:03:55,961 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 15:03:56,097 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 15:03:56,098 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 15:03:56,098 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 15:03:56,098 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 15:03:56,098 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 15:04:01,966 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: Failed with an exit code of '1' and the following message: '  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  7202  100   136  100  7066    268  13956 --:--:-- --:--:-- --:--:-- 13964
+'
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:166)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-15 15:04:21,263 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.PollChangeLogTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: Failed with an exit code of '1' and the following message: '  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  7256  100   136  100  7120   3813   194k --:--:-- --:--:-- --:--:--  198k
+'
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:166)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.PollChangeLogTask.processEntries(PollChangeLogTask.java:146)
+	at com.escenic.changelog.PollChangeLogTask.process(PollChangeLogTask.java:91)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-15 15:05:02,021 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: Failed with an exit code of '1' and the following message: '  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  7256  100   136  100  7120   4140   211k --:--:-- --:--:-- --:--:--  210k
+100  7256  100   136  100  7120   4133   211k --:--:-- --:--:-- --:--:--  210k
+'
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:166)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-15 15:05:38,260 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 15:05:38,260 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 15:05:38,261 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 15:05:38,262 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 15:05:38,262 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 15:05:42,132 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 15:05:42,135 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 15:05:42,162 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 15:05:42,206 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 15:05:42,309 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 15:05:42,464 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 15:05:42,465 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 15:05:42,465 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 15:05:42,465 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 15:05:42,465 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 15:05:47,809 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.HandleTemporaryFailureTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: Failed with an exit code of '1' and the following message: '  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  7256  100   136  100  7120   4116   210k --:--:-- --:--:-- --:--:--  217k
+'
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:166)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.HandleTemporaryFailureTask.process(HandleTemporaryFailureTask.java:62)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-15 15:05:57,617 [com.escenic.changelog.Daemon-ChangeLog-agent-0] ERROR 'com.escenic.changelog.PollChangeLogTask' - com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:121) - {} - A temporary exception occurred while handling item with identifier 'http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3067'. The xml will be written to '/Users/kathrynjonas/Desktop/changelog-2.0.0-3/./temporary-errors/b84ec130b0ade01b53099862a229aba9.xml'. We will try handling the item later
+com.escenic.changelog.TemporaryException: Failed with an exit code of '1' and the following message: '  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  7310  100   136  100  7174   5440   280k --:--:-- --:--:-- --:--:--  291k
+'
+	at com.escenic.changelog.agent.ExecuteAgent.execute(ExecuteAgent.java:166)
+	at com.escenic.changelog.agent.ExecuteAgent.consumeEntry(ExecuteAgent.java:187)
+	at com.escenic.changelog.AbstractAgent.handleEntry(AbstractAgent.java:51)
+	at com.escenic.changelog.ProcessTask.processEntry(ProcessTask.java:104)
+	at com.escenic.changelog.PollChangeLogTask.processEntries(PollChangeLogTask.java:146)
+	at com.escenic.changelog.PollChangeLogTask.process(PollChangeLogTask.java:91)
+	at com.escenic.changelog.ProcessTask.safeRun(ProcessTask.java:48)
+	at com.escenic.common.util.thread.SafeRunnable.run(SafeRunnable.java:73)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-15 15:06:28,717 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 15:06:28,717 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 15:06:28,718 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 15:06:28,718 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 15:06:28,719 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped
+2017-11-15 15:06:52,163 [main] INFO  'neo.nursery.Log4j' - neo.nursery.Log4j.initializeSynchronized(Log4j.java:209) - {} - Log4Java initialized using trace.properties
+2017-11-15 15:06:52,166 [main] INFO  'neo.nursery.BusImpl' - neo.nursery.BusImpl.loadPropertyTransformersFromClasspath(BusImpl.java:97) - {} - Loading property transformers from resource jar:file:/Users/kathrynjonas/Desktop/changelog-2.0.0-3/changelog.jar!/META-INF/services/com.escenic.nursery.spi.PropertyTransformerSpi
+2017-11-15 15:06:52,194 [main] INFO  'neo.nursery.GlobalBus' - neo.nursery.GlobalBus.createGlobalBus(GlobalBus.java:148) - {} - Bootstrapping from: ResourceDepot: looking for package 'com/escenic/configuration/bootstrap/.*' in classLoader(class sun.misc.Launcher$AppClassLoader),
+2017-11-15 15:06:52,237 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.0-sanitycheck'.
+2017-11-15 15:06:52,340 [main] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon] [*]/Reporter]} - 'com.escenic.changelog.Reporter' successfully started
+2017-11-15 15:06:52,471 [main] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus] [*]/Initial] [*]/Daemon]} - 'com.escenic.changelog.Daemon' successfully started
+2017-11-15 15:06:52,471 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial] [*]/DaemonBus] [*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemon'.
+2017-11-15 15:06:52,471 [main] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.start(GenericService.java:257) - {[*]/Initial] [*]/DaemonBus]} - 'neo.nursery.ClassLoadingBus' successfully started
+2017-11-15 15:06:52,471 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.10-daemonBus'.
+2017-11-15 15:06:52,472 [main] INFO  'neo.nursery.Initial' - neo.nursery.Initial.addService(Initial.java:18) - {[*]/Initial]} - Initial component successfully bootstrapped service '0.15-reporter'.
+2017-11-15 15:16:52,318 [com.escenic.changelog.Reporter-Reporter-0] INFO  'com.escenic.changelog.Reporter' - com.escenic.changelog.Reporter$1.run(Reporter.java:59) - {} - : 34Mb in use by applications (35392k delta) ; 368Mb total allocated by JVM; 6 threads; uptime 10:00
+Change log entries handled by 'com.escenic.changelog.Daemon': Since last sample: 4 change log entries handled; effective 0.01Hz; average 115ms; peak 190ms; load 0.00 (delta 0.00); 0 failed change log entries; Total: 4 change log entries handled; average 115ms.
+Change log requests handled by 'com.escenic.changelog.Daemon': Since last sample: 60 change log requests handled; effective 0.10Hz; average 93ms; peak 228ms; load 0.01 (delta 0.01); 0 failed change log requests; Total: 60 change log requests handled; average 93ms.
+2017-11-15 15:26:52,294 [com.escenic.changelog.Reporter-Reporter-0] INFO  'com.escenic.changelog.Reporter' - com.escenic.changelog.Reporter$1.run(Reporter.java:59) - {} - : 42Mb in use by applications (7888k delta) ; 368Mb total allocated by JVM; 6 threads; uptime 20:00
+Change log entries handled by 'com.escenic.changelog.Daemon': Since last sample: 0 change log entries handled; effective 0.00Hz; average 0ms; peak 0ms; load 0.00 (delta -0.00); 0 failed change log entries; Total: 4 change log entries handled; average 115ms.
+Change log requests handled by 'com.escenic.changelog.Daemon': Since last sample: 60 change log requests handled; effective 0.10Hz; average 92ms; peak 287ms; load 0.01 (delta -0.00); 0 failed change log requests; Total: 120 change log requests handled; average 93ms.
+2017-11-15 15:29:26,782 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Daemon' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 15:29:26,783 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Daemon' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Daemon' successfully stopped
+2017-11-15 15:29:26,783 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - com.escenic.common.util.ExecutorUtil.shutdown(ExecutorUtil.java:41) - {} - The 'com.escenic.changelog.Reporter' service finished handling events within '10' SECONDS, terminated normally
+2017-11-15 15:29:26,783 [Global Bus Shutdown Hook] INFO  'com.escenic.changelog.Reporter' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'com.escenic.changelog.Reporter' successfully stopped
+2017-11-15 15:29:26,784 [Global Bus Shutdown Hook] INFO  'neo.nursery.ClassLoadingBus' - neo.nursery.GenericService.stop(GenericService.java:313) - {} - 'neo.nursery.ClassLoadingBus' successfully stopped

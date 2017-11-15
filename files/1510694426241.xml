@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:metadata="http://xmlns.escenic.com/2010/atom-metadata">
+  <id>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3047</id>
+  <link rel="self" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3047" type="application/atom+xml; type=entry" />
+  <link rel="edit" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3047" type="application/atom+xml; type=entry" />
+  <link rel="http://www.vizrt.com/types/relation/lock" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/lock/article/3047/88424c0c" type="application/atom+xml; type=entry" />
+  <dcterms:identifier>3047</dcterms:identifier>
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/top" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/publication" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <metadata:publication href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" title="tomorrow-online">
+    <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+    <link rel="http://www.vizrt.com/types/relation/section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  </metadata:publication>
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/core/article-history?language=%7Blanguage%7D&amp;locale=%7Blocale%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3047/log/" type="application/atom+xml; type=entry" title="History" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/cxense/analytics?language=%7Blanguage%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/proxy/cxense-analytics-url/&amp;articleUrl=http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/article3047.ece" type="application/xhtml+xml" title="cXense Analytics" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/note/note.html?url=http://ece-economist.economist.cue.cloud:8080/note-webservice/escenic/content/3047/notes" type="application/xhtml+xml" title="Notes" />
+  <content type="application/vnd.vizrt.payload+xml">
+    <vdf:payload xmlns:vdf="http://www.vizrt.com/types" model="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-type/story">
+      <vdf:field name="headline">
+        <vdf:value>Xi and Trump look friendly, but anti-US feeling stirs in China</vdf:value>
+      </vdf:field>
+      <vdf:field name="subheadline">
+        <vdf:value>Barbarian handlers</vdf:value>
+      </vdf:field>
+      <vdf:field name="description">
+        <vdf:value>The two great powers have very different dreams</vdf:value>
+      </vdf:field>
+      <vdf:field name="text">
+        <vdf:value>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="color: rgb(18, 18, 18); font-family: MiloSerifPro, Palatino, serif; font-size: 20px;">CHINA’S leader, Xi Jinping, welcomed Donald Trump on the American president’s first visit to Beijing like a Chinese emperor receiving a barbarian potentate, with a mixture of flattery and disdain. The government closed to the public the 9,000-room Forbidden City—the vermilion-walled former imperial palace at the heart of Beijing—so the visitor could have his own tour and dinner there. The courtiers of the Communist Party have lost little of the ancient art of feigned deference.</p>
+            <p style="color: rgb(18, 18, 18); font-family: MiloSerifPro, Palatino, serif; font-size: 20px;">The Chinese also bore gifts: trade deals worth over $200bn, covering everything from jet engines and car parts to shale gas. Most of the pledges were memoranda of understanding: expressions of intent, not enforceable contracts. Many concerned things the Chinese would have done anyway. Still, Mr Trump seemed pleased, as he also was by Mr Xi’s (reiterated) pledge to enforce UN resolutions on North Korea.</p>
+          </div>
+        </vdf:value>
+      </vdf:field>
+      <vdf:field name="uk_only">
+        <vdf:value>false</vdf:value>
+      </vdf:field>
+      <vdf:field name="requires_subscription">
+        <vdf:value>true</vdf:value>
+      </vdf:field>
+      <vdf:field name="activateDate" />
+      <vdf:field name="expireDate" />
+      <vdf:field name="cciSecPackageMap" />
+      <vdf:field name="cciPackageName" />
+      <vdf:field name="escenicArticleId" />
+      <vdf:field name="cciPackageId" />
+      <vdf:field name="ngStoryfolderId" />
+      <vdf:field name="ngStoryfolderName" />
+      <vdf:field name="_ngece_tags" />
+      <vdf:field name="cciMetaData" />
+      <vdf:field name="com.escenic.tags">
+        <vdf:list />
+      </vdf:field>
+    </vdf:payload>
+  </content>
+  <title type="text">Xi and Trump look friendly, but anti-US feeling stirs in China</title>
+  <summary type="text" />
+  <link href="http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/article3047.ece" rel="alternate" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-summary/story" rel="http://www.escenic.com/types/relation/summary-model" type="application/vnd.vizrt.model+xml" title="story" />
+  <app:edited>2017-11-09T12:59:55.000Z</app:edited>
+  <dcterms:created>2017-11-09T12:59:55.000Z</dcterms:created>
+  <metadata:reference source="ece-auto-gen" sourceid="23d6163c-73f7-41a2-89cd-f952f40a479e" />
+  <author>
+    <name>user 5</name>
+    <uri>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/person/91</uri>
+  </author>
+  <metadata:creator>
+    <name>user 5</name>
+  </metadata:creator>
+  <metadata:last-edited-by>
+    <name>user 5</name>
+  </metadata:last-edited-by>
+  <app:control xmlns:vaext="http://www.vizrt.com/atom-ext">
+    <app:draft>yes</app:draft>
+    <vaext:state name="draft" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/state/draft/editor" />
+  </app:control>
+  <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  <link rel="usage" href="http://ece-economist.economist.cue.cloud:8080/webservice/usage/article/3047" type="text/uri-list" title="Incoming Links" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3047/preview" rel="http://www.vizrt.com/types/relation/preview" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3047/log" rel="http://www.vizrt.com/types/relation/log" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/open-search/tag-search-description.xml" rel="http://www.vizrt.com/types/relation/tag-search" title="tag-search-description" type="application/opensearchdescription+xml" />
+</entry>
+

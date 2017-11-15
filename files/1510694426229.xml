@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:metadata="http://xmlns.escenic.com/2010/atom-metadata">
+  <id>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3034</id>
+  <link rel="self" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3034" type="application/atom+xml; type=entry" />
+  <link rel="edit" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3034" type="application/atom+xml; type=entry" />
+  <link rel="http://www.vizrt.com/types/relation/lock" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/lock/article/3034/fccb07b3" type="application/atom+xml; type=entry" />
+  <dcterms:identifier>3034</dcterms:identifier>
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/top" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/publication" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <metadata:publication href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" title="tomorrow-online">
+    <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+    <link rel="http://www.vizrt.com/types/relation/section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  </metadata:publication>
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/core/article-history?language=%7Blanguage%7D&amp;locale=%7Blocale%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3034/log/" type="application/atom+xml; type=entry" title="History" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/cxense/analytics?language=%7Blanguage%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/proxy/cxense-analytics-url/&amp;articleUrl=http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/article3034.ece" type="application/xhtml+xml" title="cXense Analytics" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/note/note.html?url=http://ece-economist.economist.cue.cloud:8080/note-webservice/escenic/content/3034/notes" type="application/xhtml+xml" title="Notes" />
+  <content type="application/vnd.vizrt.payload+xml">
+    <vdf:payload xmlns:vdf="http://www.vizrt.com/types" model="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-type/story">
+      <vdf:field name="headline">
+        <vdf:value>India’s prime minister focuses too much on appearances</vdf:value>
+      </vdf:field>
+      <vdf:field name="subheadline">
+        <vdf:value>Modi blues</vdf:value>
+      </vdf:field>
+      <vdf:field name="description">
+        <vdf:value>The consequences are beginning to catch up with him</vdf:value>
+      </vdf:field>
+      <vdf:field name="text">
+        <vdf:value>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="color: rgb(18, 18, 18); font-family: MiloSerifPro, Palatino, serif; font-size: 20px;">THE change in mood is remarkable. Earlier this year Narendra Modi, India’s prime minister, had an air of invincibility. His government, although more than halfway into its five-year term, seemed more popular than ever. In March his Bharatiya Janata Party (BJP) won the most lopsided electoral victory since the 1970s in the country’s most populous state, Uttar Pradesh. In July he launched a reform that had eluded his predecessors for decades: a national goods-and-services tax (GST). Later that month he persuaded an ally of the main opposition party, Congress, to defect to the BJP’s camp, securing control of yet another state government.</p>
+            <p style="color: rgb(18, 18, 18); font-family: MiloSerifPro, Palatino, serif; font-size: 20px;">
+              Until recently another landslide at the next national election in 2019 seemed inevitable. The BJP is still likely to win, but Mr Modi is losing his sheen—and for that, he has only himself to blame (see
+              <a href="http://www.economist.com/news/asia/21730918-cumbersome-new-goods-and-services-tax-has-gone-down-badly-indias-previously-unstoppable-ruling" target="_blank">article</a>
+              ). All governments have their ups and downs. Mr Modi’s recent setbacks, however, stem in large part from his preoccupation with presentation over substance.
+            </p>
+            <div class="latest-updates-panel__container latest-updates-panel__container--blog-post" style="position: absolute; width: calc(28.76% + 6px); margin: 0px 29.0312px 1.5em -65.5469px; border-color: rgb(215, 215, 215); border-style: solid; border-width: 0px 2px 2px; float: left; max-width: 45%; font-family: EconSans; flex-basis: calc(23.3168% - 6px); right: 639.656px; color: rgb(18, 18, 18); font-size: 20px;">
+              <div class="latest-updates-panel__header latest-updates-panel__header--blog-post" style="padding: calc(0.75rem - 6px); text-align: center; background-color: rgb(215, 215, 215); line-height: 1.9em;">
+                <br />
+              </div>
+            </div>
+          </div>
+        </vdf:value>
+      </vdf:field>
+      <vdf:field name="uk_only">
+        <vdf:value>false</vdf:value>
+      </vdf:field>
+      <vdf:field name="requires_subscription">
+        <vdf:value>true</vdf:value>
+      </vdf:field>
+      <vdf:field name="activateDate" />
+      <vdf:field name="expireDate" />
+      <vdf:field name="cciSecPackageMap" />
+      <vdf:field name="cciPackageName" />
+      <vdf:field name="escenicArticleId" />
+      <vdf:field name="cciPackageId" />
+      <vdf:field name="ngStoryfolderId" />
+      <vdf:field name="ngStoryfolderName" />
+      <vdf:field name="_ngece_tags" />
+      <vdf:field name="cciMetaData" />
+      <vdf:field name="com.escenic.tags">
+        <vdf:list />
+      </vdf:field>
+    </vdf:payload>
+  </content>
+  <title type="text">India’s prime minister focuses too much on appearances</title>
+  <summary type="text" />
+  <link href="http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/article3034.ece" rel="alternate" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-summary/story" rel="http://www.escenic.com/types/relation/summary-model" type="application/vnd.vizrt.model+xml" title="story" />
+  <app:edited>2017-11-07T15:00:26.000Z</app:edited>
+  <dcterms:created>2017-11-07T14:19:04.000Z</dcterms:created>
+  <metadata:reference source="ece-auto-gen" sourceid="415be208-de21-4816-a599-1d8f17687b1d" />
+  <author>
+    <name>user 5</name>
+    <uri>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/person/91</uri>
+  </author>
+  <metadata:creator>
+    <name>user 5</name>
+  </metadata:creator>
+  <metadata:last-edited-by>
+    <name>user 8</name>
+  </metadata:last-edited-by>
+  <app:control xmlns:vaext="http://www.vizrt.com/atom-ext">
+    <app:draft>yes</app:draft>
+    <vaext:state name="draft" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/state/draft/editor" />
+  </app:control>
+  <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  <link rel="usage" href="http://ece-economist.economist.cue.cloud:8080/webservice/usage/article/3034" type="text/uri-list" title="Incoming Links" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3034/preview" rel="http://www.vizrt.com/types/relation/preview" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3034/log" rel="http://www.vizrt.com/types/relation/log" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/open-search/tag-search-description.xml" rel="http://www.vizrt.com/types/relation/tag-search" title="tag-search-description" type="application/opensearchdescription+xml" />
+</entry>
+

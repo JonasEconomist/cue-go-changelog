@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:metadata="http://xmlns.escenic.com/2010/atom-metadata">
+  <id>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051</id>
+  <link rel="self" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051" type="application/atom+xml; type=entry" />
+  <link rel="edit" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051" type="application/atom+xml; type=entry" />
+  <link rel="http://www.vizrt.com/types/relation/lock" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/lock/article/3051/ba68f4e3" type="application/atom+xml; type=entry" />
+  <dcterms:identifier>3051</dcterms:identifier>
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/top" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/publication" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <metadata:publication href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" title="tomorrow-online">
+    <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+    <link rel="http://www.vizrt.com/types/relation/section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  </metadata:publication>
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/core/article-history?language=%7Blanguage%7D&amp;locale=%7Blocale%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051/log/" type="application/atom+xml; type=entry" title="History" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/cxense/analytics?language=%7Blanguage%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/proxy/cxense-analytics-url/&amp;articleUrl=http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/3051-Time-to-test-the-execute-agent" type="application/xhtml+xml" title="cXense Analytics" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/note/note.html?url=http://ece-economist.economist.cue.cloud:8080/note-webservice/escenic/content/3051/notes" type="application/xhtml+xml" title="Notes" />
+  <content type="application/vnd.vizrt.payload+xml">
+    <vdf:payload xmlns:vdf="http://www.vizrt.com/types" model="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-type/story">
+      <vdf:field name="headline">
+        <vdf:value>Time to test the execute agent</vdf:value>
+      </vdf:field>
+      <vdf:field name="subheadline">
+        <vdf:value>Go changelog agent!</vdf:value>
+      </vdf:field>
+      <vdf:field name="description">
+        <vdf:value>Now it's time to generate some events</vdf:value>
+      </vdf:field>
+      <vdf:field name="text">
+        <vdf:value>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This is a test of the execute changelog agent that creates JSON event data from the changelog feed.</p>
+            <p>Let's make a change.</p>
+            <p>
+              <br />
+            </p>
+          </div>
+        </vdf:value>
+      </vdf:field>
+      <vdf:field name="uk_only">
+        <vdf:value>false</vdf:value>
+      </vdf:field>
+      <vdf:field name="requires_subscription">
+        <vdf:value>true</vdf:value>
+      </vdf:field>
+      <vdf:field name="activateDate" />
+      <vdf:field name="expireDate" />
+      <vdf:field name="cciSecPackageMap" />
+      <vdf:field name="cciPackageName" />
+      <vdf:field name="escenicArticleId" />
+      <vdf:field name="cciPackageId" />
+      <vdf:field name="ngStoryfolderId" />
+      <vdf:field name="ngStoryfolderName" />
+      <vdf:field name="_ngece_tags" />
+      <vdf:field name="cciMetaData" />
+      <vdf:field name="com.escenic.tags">
+        <vdf:list />
+      </vdf:field>
+    </vdf:payload>
+  </content>
+  <title type="text">Time to test the execute agent</title>
+  <summary type="text" />
+  <link href="http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/3051-Time-to-test-the-execute-agent" rel="alternate" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-summary/story" rel="http://www.escenic.com/types/relation/summary-model" type="application/vnd.vizrt.model+xml" title="story" />
+  <link rel="working-copy-of" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051/published" type="application/atom+xml; type=entry" title="Published copy" />
+  <app:edited>2017-11-10T16:55:09.000Z</app:edited>
+  <updated>2017-11-09T20:12:14.000Z</updated>
+  <published>2017-11-09T20:12:14.000Z</published>
+  <dcterms:created>2017-11-09T19:24:50.000Z</dcterms:created>
+  <metadata:reference source="ece-auto-gen" sourceid="d56ada21-d1e2-465b-b13c-e598ba333ebe" />
+  <author>
+    <name>user 5</name>
+    <uri>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/person/91</uri>
+  </author>
+  <metadata:creator>
+    <name>user 5</name>
+  </metadata:creator>
+  <metadata:last-edited-by>
+    <name>user 5</name>
+  </metadata:last-edited-by>
+  <app:control xmlns:vaext="http://www.vizrt.com/atom-ext">
+    <app:draft>yes</app:draft>
+    <vaext:state name="draft-published" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/state/draft-published/editor" />
+  </app:control>
+  <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  <link rel="usage" href="http://ece-economist.economist.cue.cloud:8080/webservice/usage/article/3051" type="text/uri-list" title="Incoming Links" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051/preview" rel="http://www.vizrt.com/types/relation/preview" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3051/log" rel="http://www.vizrt.com/types/relation/log" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/open-search/tag-search-description.xml" rel="http://www.vizrt.com/types/relation/tag-search" title="tag-search-description" type="application/opensearchdescription+xml" />
+</entry>
+

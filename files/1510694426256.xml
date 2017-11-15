@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:metadata="http://xmlns.escenic.com/2010/atom-metadata">
+  <id>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3060</id>
+  <link rel="self" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3060" type="application/atom+xml; type=entry" />
+  <link rel="edit" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3060" type="application/atom+xml; type=entry" />
+  <link rel="http://www.vizrt.com/types/relation/lock" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/lock/article/3060/9a9c8dc" type="application/atom+xml; type=entry" />
+  <dcterms:identifier>3060</dcterms:identifier>
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/top" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/publication" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <metadata:publication href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" title="tomorrow-online">
+    <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+    <link rel="http://www.vizrt.com/types/relation/section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+    <link rel="http://www.vizrt.com/types/relation/section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/241" title="International" type="application/atom+xml; type=entry" />
+  </metadata:publication>
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/core/article-history?language=%7Blanguage%7D&amp;locale=%7Blocale%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3060/log/" type="application/atom+xml; type=entry" title="History" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/cxense/analytics?language=%7Blanguage%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/proxy/cxense-analytics-url/&amp;articleUrl=http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/article3060.ece" type="application/xhtml+xml" title="cXense Analytics" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/note/note.html?url=http://ece-economist.economist.cue.cloud:8080/note-webservice/escenic/content/3060/notes" type="application/xhtml+xml" title="Notes" />
+  <content type="application/vnd.vizrt.payload+xml">
+    <vdf:payload xmlns:vdf="http://www.vizrt.com/types" model="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-type/story">
+      <vdf:field name="headline">
+        <vdf:value>Publishers are wary of Facebook and Google but must work with them</vdf:value>
+      </vdf:field>
+      <vdf:field name="subheadline">
+        <vdf:value>It’s complicated</vdf:value>
+      </vdf:field>
+      <vdf:field name="description">
+        <vdf:value>New concessions from the social-media firms are unlikely to help publishers much</vdf:value>
+      </vdf:field>
+      <vdf:field name="text">
+        <vdf:value>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="MsoNormal">IN RECENT months Google and Facebook have made changes that may escape the notice of most of their billions of users, but not of news organisations. Facebook began displaying the logos of publishers in some of its posts, so readers can identify the news source. And Google for the first time gave publishers the ability to control how many times the search engine’s users can visit news sites free of charge. Both will directly help papers to sell subscriptions.</p>
+            <p class="MsoNormal">To critics of the social-media giants, that might look like wolves offering to help the sheep while still feasting on the herd. The business of both Facebook and Alphabet, parent of Google and YouTube, is to occupy people’s time and attention with their free services and content, and to sell ads against those eyeballs. For them, quality journalism is just another hook.</p>
+            <p class="MsoNormal">Facebook calls its “News Feed” offering its most important product, but in recent years it has tweaked the feed in ways that de-emphasise actual news, instead prioritising updates from friends and family over those from publishers. The associated ad revenues for many publishers have been either nominal, in the case of Facebook’s fast-loading “instant articles”, or as yet mostly non-existent, in the case of videos they make for the social network. News sites have found they have no choice but to work with the two tech giants, however: Facebook, with its 2bn users, and Google, which directs 10bn clicks a month to publishers, are where their readers are.</p>
+            <p class="MsoNormal">So there is no confusion about where the power lies. That is unlikely to change much in future, although publishers are fighting back a bit. In America a consortium of nearly 2,000 news organisations, the News Media Alliance, is asking Congress for an antitrust exemption to allow publishers to negotiate collectively with the two firms. David Chavern, the consortium’s president, lists some of the demands: more ad revenue; the sharing of data about their audiences on the tech platforms; better branding for publishers, as the use of logos is very limited (people simply say, “I read that on Facebook”, says Mr Chavern); and support for subscriptions.</p>
+            <p class="MsoNormal">That the tech giants are making concessions on some of these points may be because they sense that the political mood is turning against them in America and in Europe, or because of genuine concern for the media ecosystem. Recently Google News Lab, formed in 2015, helped fund “Report for America”, which will put an initial 18 reporters in small-town newsrooms across the country, with more to come in future years. Facebook started a “Journalism Project” in January to help develop news products in collaboration with newsrooms.</p>
+            <p class="MsoNormal">Several newspaper executives say Google’s dealings with them seemed more sincere than Facebook’s. But both firms’ changes to click-through policies are significant. Google’s old policy for users directed to make their first visit to a newspaper website was called “first click free”, but it actually gave users three free clicks on a newspaper’s site every day. As more publishers put up paywalls online, they lobbied Google to limit free access. Google prefers an entirely free, open web—the better for searching and for ad placements—but in the end it relented.</p>
+            <p class="MsoNormal">“We’re pleased that the conversation has moved on from this ideological position that all content should be free,” says an executive at the Wall Street Journal, which charges readers for digital access. Earlier this year the Journal opted out of “first click free” and experienced a 50% decline in traffic from Google. It also saw a quadrupling of conversions to subscription among those who came to the site and hit the paywall. To the Journal, both data points confirmed the sheer power of tech platforms over publishers.</p>
+            <p class="MsoNormal">As for Facebook, users today get all instant articles free of charge. It has signed up ten publishers (including The Economist) for a trial that gives some users of Facebook’s mobile app access to ten free instant articles per month but then sends them to a publisher’s paywall. Even so, many readers are not likely to encounter one.</p>
+            <p class="MsoNormal">Media executives at firms that rely more on selling ads than subscriptions are more enthusiastic about Facebook and Google. “We see them as a friend,” says Paul Zwillenberg, chief executive of Britain’s Daily Mail and General Trust, owner of the Daily Mail. Mail Online has doubled daily visitors and engagement in part by making videos for Facebook and YouTube. That does not mean giving up on direct internet traffic (on which Mail Online can sell ads without sharing revenue with Facebook or</p>
+            <p class="MsoNormal">Google). About 35% of Mail Online’s traffic in America still comes directly to the news site’s homepage, or “front door”, according to SimilarWeb, an analytics firm, which is slightly higher than the rate for the homepages of the biggest American papers.</p>
+            <p class="MsoNormal">But selling digital ads on their own websites is a challenge for most news organisations, in part because of the competition from the duopoly. Facebook and Alphabet will take the majority of all digital-ad revenue globally this year, and, by some measures, have recently taken 80-90% of the growth in such revenue. Their data on users’ browsing activities give them a huge advantage in micro-targeting users. Wherever journalism turns, Facebook and Google loom large. Their recent moves, although welcome to many publishers, are unlikely to alter the trajectory of the relationship.</p>
+            <p class="MsoNormal">
+              <br />
+            </p>
+          </div>
+        </vdf:value>
+      </vdf:field>
+      <vdf:field name="uk_only">
+        <vdf:value>false</vdf:value>
+      </vdf:field>
+      <vdf:field name="requires_subscription">
+        <vdf:value>true</vdf:value>
+      </vdf:field>
+      <vdf:field name="activateDate" />
+      <vdf:field name="expireDate" />
+      <vdf:field name="cciSecPackageMap" />
+      <vdf:field name="cciPackageName" />
+      <vdf:field name="escenicArticleId" />
+      <vdf:field name="cciPackageId" />
+      <vdf:field name="ngStoryfolderId" />
+      <vdf:field name="ngStoryfolderName" />
+      <vdf:field name="_ngece_tags" />
+      <vdf:field name="cciMetaData" />
+      <vdf:field name="com.escenic.tags">
+        <vdf:list />
+      </vdf:field>
+    </vdf:payload>
+  </content>
+  <title type="text">Publishers are wary of Facebook and Google but must work with them</title>
+  <summary type="text" />
+  <link href="http://tomorrow-online.ece-economist.economist.cue.cloud/incoming/article3060.ece" rel="alternate" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-summary/story" rel="http://www.escenic.com/types/relation/summary-model" type="application/vnd.vizrt.model+xml" title="story" />
+  <app:edited>2017-11-13T19:04:01.000Z</app:edited>
+  <dcterms:created>2017-11-13T13:12:47.000Z</dcterms:created>
+  <metadata:reference source="ece-auto-gen" sourceid="556b186c-5cd0-4530-9f60-f8428921f299" />
+  <author>
+    <name>user 5</name>
+    <uri>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/person/91</uri>
+  </author>
+  <metadata:creator>
+    <name>user 5</name>
+  </metadata:creator>
+  <metadata:last-edited-by>
+    <name>user 5</name>
+  </metadata:last-edited-by>
+  <app:control xmlns:vaext="http://www.vizrt.com/atom-ext">
+    <app:draft>yes</app:draft>
+    <vaext:state name="draft" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/state/draft/editor" />
+  </app:control>
+  <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/140" title="New Articles" type="application/atom+xml; type=entry" />
+  <link rel="usage" href="http://ece-economist.economist.cue.cloud:8080/webservice/usage/article/3060" type="text/uri-list" title="Incoming Links" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3060/preview" rel="http://www.vizrt.com/types/relation/preview" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3060/log" rel="http://www.vizrt.com/types/relation/log" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/open-search/tag-search-description.xml" rel="http://www.vizrt.com/types/relation/tag-search" title="tag-search-description" type="application/opensearchdescription+xml" />
+</entry>
+

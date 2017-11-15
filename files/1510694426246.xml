@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:metadata="http://xmlns.escenic.com/2010/atom-metadata">
+  <id>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3048</id>
+  <link rel="self" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3048" type="application/atom+xml; type=entry" />
+  <link rel="edit" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3048" type="application/atom+xml; type=entry" />
+  <link rel="http://www.vizrt.com/types/relation/lock" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/lock/article/3048/708256a5" type="application/atom+xml; type=entry" />
+  <dcterms:identifier>3048</dcterms:identifier>
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/top" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" rel="http://www.vizrt.com/types/relation/publication" type="application/atom+xml; type=entry" title="tomorrow-online" />
+  <metadata:publication href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/" title="tomorrow-online">
+    <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/241" title="International" type="application/atom+xml; type=entry" />
+    <link rel="http://www.vizrt.com/types/relation/section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/241" title="International" type="application/atom+xml; type=entry" />
+  </metadata:publication>
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/core/article-history?language=%7Blanguage%7D&amp;locale=%7Blocale%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3048/log/" type="application/atom+xml; type=entry" title="History" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/cxense/analytics?language=%7Blanguage%7D&amp;url=http://ece-economist.economist.cue.cloud:8080/webservice/escenic/proxy/cxense-analytics-url/&amp;articleUrl=http://tomorrow-online.ece-economist.economist.cue.cloud/international/article3048.ece" type="application/xhtml+xml" title="cXense Analytics" />
+  <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece-economist.economist.cue.cloud:8080/webservice-extensions/note/note.html?url=http://ece-economist.economist.cue.cloud:8080/note-webservice/escenic/content/3048/notes" type="application/xhtml+xml" title="Notes" />
+  <content type="application/vnd.vizrt.payload+xml">
+    <vdf:payload xmlns:vdf="http://www.vizrt.com/types" model="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-type/story">
+      <vdf:field name="headline">
+        <vdf:value>Why is Protestantism flourishing in the developing world?</vdf:value>
+      </vdf:field>
+      <vdf:field name="subheadline">
+        <vdf:value>The Economist explains</vdf:value>
+      </vdf:field>
+      <vdf:field name="description">
+        <vdf:value>As it sinks in the West, the faith is finding new followers elsewhere</vdf:value>
+      </vdf:field>
+      <vdf:field name="text">
+        <vdf:value>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="color: rgb(18, 18, 18); font-family: MiloSerifPro, Palatino, serif; font-size: 20px;">PROTESTANTISM has played a large part in the development of the modern, liberal world. It has contributed to the emergence of concepts such as freedom of conscience, tolerance and the separation of powers. But as the world marks the 500th anniversary of the start of the Reformation, the faith’s axis is shifting. The percentage of Western Europeans and North Americans professing Protestantism is declining, whereas in the developing world the proportion is growing fast. For much of the 20th century, global secularisation was considered inevitable as nations modernised. But the developing world is actually becoming more religious, part of what Peter Berger, a sociologist, called the “desecularisation” of the world. At the heart of this religious resurgence have been Islam and Pentecostalism, a branch of Protestant Christianity. Islam grew at an annual average of 1.9% between 2000 and 2017, mainly as the result of a high birth rate. Pentecostalism grew at 2.2% each year, mainly by conversion. Half of developing-world Christians are Pentecostal, evangelical or charismatic (all branches of the faith emphasise the authority of the Bible and the need for a spiritual rebirth). Why are people so attracted to it?</p>
+            <p style="color: rgb(18, 18, 18); font-family: MiloSerifPro, Palatino, serif; font-size: 20px;">Christianity has always had ecstatic elements, but modern Pentecostalism was born during the “Azusa Street revival” in Los Angeles in 1906. Led by a black preacher named William Seymour, congregants, many of them female, black or poor, began to experience the “baptism of the Holy Spirit”. This led them to speak in tongues, to prophesy and to experience miraculous healing. The movement spread across America and on to the developing world. In Africa, Latin America and Asia, the growth of the faith has coincided with large-scale economic reform and urban migration. The teaching that all people are made in the image of God helps give dignity to the downtrodden. It is a bootstrapping, forward-looking faith and its cultural malleability, with no requirement for clergy, makes it suitable to populations on the move, seeking new social identities and communities.</p>
+            <p>
+              <br />
+            </p>
+          </div>
+        </vdf:value>
+      </vdf:field>
+      <vdf:field name="uk_only">
+        <vdf:value>false</vdf:value>
+      </vdf:field>
+      <vdf:field name="requires_subscription">
+        <vdf:value>true</vdf:value>
+      </vdf:field>
+      <vdf:field name="activateDate" />
+      <vdf:field name="expireDate" />
+      <vdf:field name="cciSecPackageMap" />
+      <vdf:field name="cciPackageName" />
+      <vdf:field name="escenicArticleId" />
+      <vdf:field name="cciPackageId" />
+      <vdf:field name="ngStoryfolderId" />
+      <vdf:field name="ngStoryfolderName" />
+      <vdf:field name="_ngece_tags" />
+      <vdf:field name="cciMetaData" />
+      <vdf:field name="com.escenic.tags">
+        <vdf:list />
+      </vdf:field>
+    </vdf:payload>
+  </content>
+  <title type="text">Why is Protestantism flourishing in the developing world?</title>
+  <summary type="text" />
+  <link href="http://tomorrow-online.ece-economist.economist.cue.cloud/international/article3048.ece" rel="alternate" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/publication/tomorrow-online/model/content-summary/story" rel="http://www.escenic.com/types/relation/summary-model" type="application/vnd.vizrt.model+xml" title="story" />
+  <app:edited>2017-11-09T13:17:50.000Z</app:edited>
+  <dcterms:created>2017-11-09T13:17:50.000Z</dcterms:created>
+  <metadata:reference source="ece-auto-gen" sourceid="111b95f4-7cde-4385-88e4-c519bfbe1d40" />
+  <author>
+    <name>user 5</name>
+    <uri>http://ece-economist.economist.cue.cloud:8080/webservice/escenic/person/91</uri>
+  </author>
+  <metadata:creator>
+    <name>user 5</name>
+  </metadata:creator>
+  <metadata:last-edited-by>
+    <name>user 5</name>
+  </metadata:last-edited-by>
+  <app:control xmlns:vaext="http://www.vizrt.com/atom-ext">
+    <app:draft>yes</app:draft>
+    <vaext:state name="draft" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/state/draft/editor" />
+  </app:control>
+  <link rel="http://www.vizrt.com/types/relation/home-section" href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/section/241" title="International" type="application/atom+xml; type=entry" />
+  <link rel="usage" href="http://ece-economist.economist.cue.cloud:8080/webservice/usage/article/3048" type="text/uri-list" title="Incoming Links" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3048/preview" rel="http://www.vizrt.com/types/relation/preview" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/escenic/content/3048/log" rel="http://www.vizrt.com/types/relation/log" />
+  <link href="http://ece-economist.economist.cue.cloud:8080/webservice/open-search/tag-search-description.xml" rel="http://www.vizrt.com/types/relation/tag-search" title="tag-search-description" type="application/opensearchdescription+xml" />
+</entry>
+
