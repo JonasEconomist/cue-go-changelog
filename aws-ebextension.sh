@@ -1,18 +1,18 @@
 packages:
   yum:
-    nginx: []
-
+    java-1.7.0-openjdk: []
+    java-1.7.0-openjdk-devel: []
 
 commands:
-  cue_changelog_download:
-    command: "cd /mnt/download && wget https://user4:economist@maven.escenic.com/com/escenic/changelog/changelog/2.0.0-3/changelog-2.0.0-3.zip"
-    test: "[ ! -d /mnt/download ]"
-  cue_changelog_unzip: 
-    command: "mkdir /opt/escenic/ && chown -R escenic:escenic /opt/escenic/ && su - escenic && cd /opt/escenic/ && unzip /mnt/download/changelog-2.0.0-3.zip"
-    test:
-  cue_changelog_start:
-    command: "cd /opt/escenic/changelog-daemon-2.0.0-3 && ./changelog.sh"
-    test:
+  00_cue_changelog_download:
+    command: cd /mnt/download && wget https://user4:economist@maven.escenic.com/com/escenic/changelog/changelog/2.0.0-3/changelog-2.0.0-3.zip
+    test: [ ! -d /mnt/download ]
+  01_cue_changelog_unzip: 
+    command: mkdir /opt/escenic/ && chown -R escenic:escenic /opt/escenic/ && su - escenic && cd /opt/escenic/ && unzip /mnt/download/changelog-2.0.0-3.zip
+    test: [ ! -d /opt/escenic/changelog-daemon-2.0.0-3 ]
+  02_cue_changelog_start:
+    command: cd /opt/escenic/changelog-daemon-2.0.0-3 && ./changelog.sh
+    test: ps ax | grep -v grep | grep changelog.sh > /dev/null
 
 files:
   /opt/escenic/changelog-daemon-2.0.0-3/config/Daemon.properties:
@@ -145,12 +145,4 @@ files:
     request_url="http://localhost:9494"
     rep=$(curl -X POST -d "$data" "$request_url")
     status=$?
-    echo "$rep"
-
-    if [ $status = "200" ]; then
-        echo "Success"
-        exit 0
-      else
-        echo "Failed"
-        exit 1
-    fi
+    echo $status
